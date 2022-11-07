@@ -1,0 +1,63 @@
+/*-----
+Reset
+-----*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----
+Body
+-----*/
+.container {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+}
+
+.pics {
+    position: relative;
+    margin-top: 100px;
+    height: 300px;
+
+}
+
+.pic {
+    height: 300px;
+    margin: auto;
+    display: none;
+}
+
+.pic img {
+    width: 700px;
+    height: 300px; 
+    object-fit: cover;  
+}
+
+.pic.active {
+    display: block;
+}
+
+.btn-up {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+    z-index: 100;
+    left: 50%;  
+    top: 10px;
+}
+
+.btn-down {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+    z-index: 100;
+    left: 50%;
+    bottom: 10px;
+}
